@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excel Tools: Summarizing Data - NYC DCAS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="slide.css">
+  </head>
+  <body>
+    <textarea id="source">
+
+layout:true
+
+<p class="footer">
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Excel Tools: Summarizing Data - Additional Materials</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+</p>
+---
+
+class: center
+
+![img-center-50](images/dcas.png)
+- - - 
+# Excel Tools: Summarizing Data
+## Supplemental Materials
+## Richard Dunks and Julia Marden
+![img-center-35](images/datapolitan.png)
+
+---
+
+# Datasets for Class
++ [Inventory Example](data/InventoryExample.xlsx)
++ [NYC Population Data, 1970-2010](data/NYC_Population_1970-2010.xlsx)
++ [311 Noise Complaints, 1 June - 30 August 2015](data/311_Noise_20150601_20150830.csv)
+
+---
+
+# Key Excel Functions for Summarizing Data
++ [`=SUM()`](https://support.office.com/en-us/article/SUM-function-043e1c7d-7726-4e80-8f32-07b23e057f89): Calculates the sum for a range of numbers
++ [`=COUNT()`](https://support.office.com/en-us/article/COUNT-function-a59cd7fc-b623-4d93-87a4-d23bf411294c): Counts the number of cells containing numbers in a range
++ [`=COUNTA()`](https://support.office.com/en-us/article/COUNTA-function-7dc98875-d5c1-46f1-9a82-53f3219e2509): Counts the number of non-blank cells in a range
++ [`=HOUR()`](https://support.office.com/en-us/article/HOUR-function-a3afa879-86cb-4339-b1b5-2dd2d7310ac7): Extracts the hour from a timestamp
++ [`=WEEKDAY()`](https://support.office.com/en-us/article/WEEKDAY-function-60e44483-2ed1-439f-8bd0-e404c190949a): Extracts the day of the week from a timestamp
++ [`=CHOOSE()`](https://support.office.com/en-us/article/CHOOSE-function-FC5C184F-CB62-4EC7-A46E-38653B98F5BC): Uses an index number to return a result from an ordered list of values
+
+---
+
+# Key Excel Functions for Summarizing Data
++ [`=MID()`](https://support.office.com/en-us/article/MID-MIDB-functions-d5f9e25c-d7d6-472e-b568-4ecb12433028): Select a specified number of characters from a text string
++ [`=LEFT()`](https://support.office.com/en-us/article/LEFT-LEFTB-functions-9203d2d2-7960-479b-84c6-1ea52b99640c): Select a specified number of characters from the beginning of a text string
++ [`=RIGHT()`](https://support.office.com/en-us/article/RIGHT-RIGHTB-functions-240267ee-9afa-4639-a02b-f19e1786cf2f): Select a specified number of characters from the end of a text string
++ [`=FIND()`](https://support.office.com/en-us/article/FIND-FINDB-functions-c7912941-af2a-4bdf-a553-d0d89b0a0628): Find the location of a given character in a text string
+
+---
+
+# Key Excel Functions for Summarizing Data
++ [`=CONCATENATE()`](https://support.office.com/en-us/article/CONCATENATE-function-8f8ae884-2ca8-4f7a-b093-75d702bea31d): Combine characters together into a text string
++ [`=VLOOKUP()`](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1): An operation to look up a value in another location based on an index value 
++ [`=IF()`](https://support.office.com/en-us/article/IF-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2): A function for logical comparison between values to return a desired result given a particular condition
+
+
+---
+
+# Formulas for Class
++ Formula to concatenate Community District and Borough
+```
+=CONCATENATE(IF(A3<10,"0",""),A3," BRONX")
+```
++ Formula for VLOOKUP of Community District Population (may need to adjust references)
+```
+=VLOOKUP(A5,'[NYC_Population_1970-2010.xlsx]A'!$B$1:$H$81,7,FALSE)
+```
+
+---
+
+# Have trouble with the analysis?
++ [Inventory Example with Forumulas](data/InventoryExample_with_Formulas.xlsx)
++ [NYC Population, 1970 - 2010 with calculations](data/NYC_Population_1970-2010_calculated.xlsx)
+
+
+---
+
+# Resources
++ [NYC Open Data Portal](https://data.cityofnewyork.us/)
++ [Center for Government Excellence](http://govex.jhu.edu/) [Data Science Cheatsheet](https://github.com/govex/Data-Science)
+
+---
+
+# Contact Information
+## Richard Dunks
++ Email: richard[at]datapolitan[dot]com
++ Blog: http://blog.datapolitan.com
++ Twitter: [@datapolitan](https://twitter.com/datapolitan)
+
+## Julia Marden
++ Email: julia[at]tinypanther[dot]com
++ Website: http://tinypanther.com
++ Twitter: [@juliaem](https://twitter.com/juliaem)
+
+---
+
+class:center, middle
+#THANK YOU!
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create(
+        // {
+        //   slideNumberFormat: ""}
+        );
+    </script>
+  </body>
+</html>
