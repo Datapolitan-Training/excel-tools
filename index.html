@@ -764,17 +764,86 @@ class: middle, center
 
 ---
 
+class:center,middle
+# We're Going to Join the Population Data with the 311 Service Requests
+
+---
+
 # VLOOKUP
+--
+
 + Useful for referencing data from another sheet (reference tables)
+--
+
 + Basic Syntax
 ```
 =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
 ```
+
+--
+
 + Example
 ```
 =VLOOKUP(A2,SHEET2$A1:$D500,4,FALSE)
 ```
+---
 
+# Adding the VLOOKUP
++ We need to lookup the population based on the Community Board and Borough
+
+```
+=VLOOKUP(A5,'[NYC_Population_1970-2010_formatted.xlsx]A'!$A$2:$G$60,7,FALSE)
+```
+
+--
+
++ Use the value in cell A5
+--
+
++ Go to Workbook `NYC_Population_1970-2010_formatted.xlsx`, Sheet `A`
+--
+
++ Match the value from cell A5 in Column A, Rows 2 - 60
+--
+
++ Return the value in column 7 (G)
+--
+
++ Don't do any fuzzy matching (exact match)
+
+---
+
+# Adding the VLOOKUP
+
+![img-center-90](images/vlookup1.png)
+
+---
+
+# Adding the VLOOKUP
+
+![img-center-90](images/vlookup2.png)
+
+---
+
+# Calculating the Complaints per 1000 People
+
+![img-center-90](images/calc_complaints1.png)
+
+---
+
+# Calculating the Complaints per 1000 People
+
+![img-center-90](images/calc_complaints2.png)
+
+---
+
+# Conditional Formatting
+![img-center-65](images/cf1.png)
+
+---
+
+# Conditional Formatting
+![img-center-80](images/cf_311_pop.png)
 
 ---
 
