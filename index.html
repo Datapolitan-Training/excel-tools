@@ -551,6 +551,20 @@ class: middle, center
 
 ---
 
+# VLOOKUP
++ Useful for referencing data from another sheet (reference tables)
++ Basic Syntax
+```
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+```
++ Example
+```
+=VLOOKUP(A2,SHEET2$A1:$D500,4,FALSE)
+```
+
+
+---
+
 # Datasets for Class
 + [Inventory Example](data/InventoryExample.xlsx)
 + [NYC Population Data, 1970-2010](data/NYC_Population_1970-2010.xlsx)
