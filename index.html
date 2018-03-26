@@ -10,19 +10,840 @@
 
 layout:true
 
-<p class="footer">
+<div class="header" style="display:block; text-align: left; color:gray; font-size:1em; position: fixed; top: 0px; left: 0px; height: 30px;vertical-align:middle;margin:7px 0 0 0;width:100%;background: #fcfcfc;
+background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%); 
+background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);
+background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
+  <img src="../images/datapolitan_transparent_small.png" style="position: fixed;top: 2px; left: 5px; width: 14%;">
+  <p style="display:block;text-align:left;color:gray;font-size:1em; position: fixed; top: 0px; left: 155px; height: 30px;vertical-align:middle;margin:7px 0 0 0; ">Excel Tools: Summarizing Data</p>
+</div>
+<div class="footer" style="display:block;color:gray;position:fixed;bottom: 0px;left:0px;height:30px;vertical-align:middle;margin:0 0 0 0;width:100%;background: #fcfcfc;background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%);background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);sfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
+  <p class="footer">
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Excel Tools: Summarizing Data</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" target="_blank" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a>, <a href="http://nijel.org/" target="_blank" property="cc:attributionName" rel="cc:attributionURL">JD Godchaux</a>, and Beth Pappas </a>is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+  </p>
+</div>
+
+<!-- <p class="footer">
 <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Excel Tools: Summarizing Data - Additional Materials</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-</p>
+</p> -->
 ---
 
-class: center
+class:center, middle
+![img-center-50](images/datapolitan.png)
 
-![img-center-50](images/dcas.png)
-- - - 
-# Excel Tools: Summarizing Data <br> Supplemental Materials
-## Available at: http://bit.ly/excel-tools
-### Richard Dunks and Julia Marden
-![img-center-35](images/datapolitan.png)
+# Excel Tools: Summarizing Data 
+
+- - -
+
+## Instructors: Richard Dunks and Julia Marden
+### Follow along at: http://bit.ly/excel-tools
+
+#### See the code at: http://bit.ly/excel-tools-code
+
+---
+
+class:center,middle
+# Welcome
+
+---
+
+# Data Driven Culture
+![img-center-90](images/ddc_compass.png)
+
+---
+
+# Introduce Yourself to Your Neighbor
++ Who are you?
++ Where do you work?
++ What has been the proudest moment in your job?
+
+---
+
+# What to Expect Today
++ 9:45 – Review of Basic Operations
++ 10:30 – 15 min break
++ 10:45 – Exploratory Analysis and Basic Summarization
++ 12:00 – Lunch
++ 1:00 – Visualizing Data in Excel
++ 2:00 – More Functions in Excel
++ 2:30 – 15 min break
++ 2:45 – Advanced Excel Functionality
++ 4:30 – Dismissal
+
+---
+
+# Housekeeping
+--
+
++ We’ll have one 15 minute break in the morning
+--
+
++ We’ll have an hour for lunch
+--
+
++ We’ll have a 15 minute break in the afternoon
+--
+
++ Class will start promptly after breaks
+--
+
++ Feel free to use the bathroom if you need during class
+--
+
++ Please take any phone conversations into the hall to not disrupt the class
+
+???
++ Set expectations for the class
+
+---
+
+# Getting Started
++ What are spreadsheets?
++ Why do we use them?
+
+???
++ Get students thinking about what operations spreadsheets enable
++ Understand how spreadsheets differ from other office applications
+
+---
+
+class:center,middle
+# Overview of Excel
+
+---
+
+# Benefits of Excel
+--
+
++ Easy to use
+--
+
++ Very visual
+--
+
++ Lots of features and functions
+--
+
++ Easy to make charts
+--
+
++ Does a lot of formatting for you
+
+???
++ Poll class for their key challenges working with Excel
++ Discuss the ways in which Excel is beneficial in daily work
+
+---
+
+# Drawbacks of Excel
+--
+
++ Not very intuitive
+--
+
++ Hard to find what you’re looking for (and they keep moving things around)
+--
+
++ Lots of features and functions
+--
+
++ Easy to make (bad) charts
+--
+
++ Does a lot of formatting for you
+
+???
++ Poll class for their key challenges working with Excel
++ Discuss the ways in which Excel is challenging in their daily work
+
+---
+
+# Cautionary Tale - Austerity in Europe
+![img-center-80](images/athensprotest.jpg)
+.caption[Image Credit: [http://underclassrising.net](https://www.flickr.com/photos/0742/4163565280), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+---
+
+# Cautionary Tale - Austerity in Europe
+![img-center-60](images/reinhart_rogoff_coding_error.png)
+Source: Mike Konczal, "[Researchers Finally Replicated Reinhart-Rogoff, and There Are Serious Problems](http://rooseveltinstitute.org/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems/)"
+
+---
+
+# To Err is Human
+
+> Since 1995, 88% of the 113 spreadsheets audited in 7 studies ... have contained errors.
+
+## - Raymond Panko, "[What We Know About Spreadsheet Errors](http://panko.shidler.hawaii.edu/My%20Publications/Whatknow.htm)"
+???
++ An example of how common Excel errors can have a real-world impact
+
+???
++ Contextualize occurance of errors (they happen alot)
++ Instill expectation that errors will happen and to be aware (they will happen to you)
+
+---
+
+exclude:true
+class:center,middle
+# 88% of Spreadsheets Have Errors
+
+Source: [Market Watch](http://www.marketwatch.com/story/88-of-spreadsheets-have-errors-2013-04-17)
+
+---
+
+# Some Common Excel Shortcuts
+--
+
++ `Ctrl + arrow key` - Go to the end of the text in that direction
+--
+
++ `Ctrl + c` - Copy the selection to clipboard
+--
+
++ `Ctrl + v` - Paste clipboard contents to the cell(s)
+--
+
++ [Click for more shortcuts](http://office.microsoft.com/en-us/excel-help/keyboard-shortcuts-in-excel-2010-HP010342494.aspx)
+
+???
++ Introduce key shortcuts to make analysis more efficient
++ Emphasize that these are optional but helpful
+
+---
+
+class:center,middle
+# Let's Get Started
+## [Click to download our data](data/InventoryExample.xlsx)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form1.png)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form2.png)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form3.png)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form4.png)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form5.png)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form6.png)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form7.png)
+
+---
+
+# Writing Simple Formulas
+![img-center-100](images/inv_form8.png)
+
+---
+
+class:center,middle
+# Excel Functions
+## [More on Functions from Microsoft](http://office.microsoft.com/en-us/excel-help/excel-functions-by-category-HP010342656.aspx)
+
+---
+
+# Basic Function Syntax
+```
+=FUNCTION_NAME(parameter1, parameter2,...)
+```
+
+--
+## For Example
+```
+=SUM(A5:A8)
+```
+--
++ This tells Excel to sum all the values in cells A5, A6, A7, and A8
+
+---
+
+# SUM Function
+![img-center-100](images/ex1_sum.png)
+
+---
+
+# COUNT Function
+![img-center-100](images/ex1_count1.png)
+
+
+---
+
+# COUNT Function
+![img-center-100](images/ex1_count2.png)
+
+
+---
+
+# Calculate Discount
+![img-center-100](images/ex1_calc_disc1.png)
+
+---
+
+# Calculate Discount
+![img-center-100](images/ex1_calc_disc2.png)
+
+---
+
+# SUM Function with Negative Numbers
+![img-center-100](images/ex1_sum_nn1.png)
+
+---
+
+# SUM Function with Negative Numbers
+![img-center-100](images/ex1_sum_nn2.png)
+
+---
+
+# Functions in Excel
+--
+
++ Allow you to do calculations in Excel
+--
+
++ Also allow you to manipulate text
+--
+
++ And a whole lot more...
+
+---
+
+# Some Categories of Functions in Excel
+--
+
++ Database functions
+--
+
++ Date and time functions
+--
+
++ Financial functions
+--
+
++ Logical functions
+--
+
++ Lookup and reference functions
+--
+
++ Math and trigonometry functions
+--
+
++ Statistical functions
+--
+
++ Text functions
+--
+
++ 13 categories in total
+
+---
+
+class:center,middle
+# Let's Tell the Story of NYC between 1970 and 2010
+## [Click to download the data](data/NYC_Population_1970-2010.xlsx)
+
+---
+
+# Calculating Total Borough Population
+![img-center-100](images/total_boro_pop1.png)
+
+---
+
+# Calculating Total Borough Population
+![img-center-100](images/total_boro_pop2.png)
+--
+
++ Copy and paste the formula for each decade
+--
+
++ .red[Can we paste the same formula for all boroughs?]
+
+---
+
+# Calculating Population Change Each Decade
+![img-center-100](images/boro_pop_change1.png)
+
+---
+
+# Calculating Population Change Each Decade
+![img-center-100](images/boro_pop_change2.png)
+--
+
++ Copy and paste the formula for each decade starting with 1980 and each borough
+
+---
+
+# Calculating Percentage Change Each Decade
+![img-center-100](images/perc_change1.png)
+
+---
+
+# Calculating Percentage Change Each Decade
+![img-center-100](images/perc_change2.png)
+
+---
+
+# Display Population Change Over Time
+![img-center-100](images/cd_graph1.png)
+
+---
+
+# Display Population Change Over Time
+![img-center-90](images/cd_graph2.png)
+
+---
+
+# Display Population Change Over Time
+![img-center-100](images/cd_graph3.png)
+
+---
+
+# Display Population Change Over Time
+![img-center-60](images/cd_graph4.png)
+
+---
+
+# Display Population Change Over Time
+![img-center-85](images/cd_graph5.png)
+
+---
+
+# Display Population Change Over Time
+![img-center-60](images/cd_graph6.png)
+
+---
+
+class:center,middle
+# 15 Minute Break
+
+---
+
+# Exploratory Data Analysis
+--
+
++ Goal -> Discover patterns in the data
+--
+
++ Understand the context
+--
+
++ Summarize fields
+--
+
++ Use graphical representations of the data
+--
+
++ Explore outliers
+
+--
+
+####Tukey, J.W. (1977). Exploratory data analysis. Reading, MA: Addison-Wesley
+
+---
+
+class:center,middle
+# Looking at Noise in New York City
+## [Click to download the data](data/NYC_Population_1970-2010.xlsx)
+
+---
+
+# Filtering
+![img-center-100](images/filtering1.png)
+
+---
+
+# Filtering
+![img-center-40](images/filtering2.png)
+
+---
+
+# Conditional Formatting
+![img-center-65](images/cf1.png)
+
+---
+
+# Conditional Formatting
+![img-center-80](images/cf2.png)
+
+---
+
+# PivotTables
+--
+
++ A data summarization tool
+--
+
++ Useful to quickly understand data
+--
+
++ Can use to graph data totals
+--
+
+
+
+![img-center-100](images/pt1.png)
+
+---
+
+# Creating a PivotTable
+![img-center-60](images/pt2.png)
+--
+
++ Should default to all your data .red[unless you have any cells selected]
+--
+
++ Should default to a new worksheet
+
+---
+
+# Creating a PivotTable
+![img-right-40](images/pt3.png)
+## Drag and drop fields to visualize
++ Row labels 
++ Values
++ Filter
++ Column Labels
+
+---
+
+# Creating a PivotTable
+![img-center-100](images/pt4.png)
+
+---
+
+# Your Turn
++ In your groups, explore the complaints for your assigned borough
++ What are the common types of complaints?
++ Which Community Districts have the most complaints?
++ Identify any other meaningful patterns to the noise complaints
+
+---
+
+# NYC Community Districts
+
+![img-center-65](images/cd_map.png)
+.caption[Image Credit: Datapolitan [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)]
+
+
+---
+
+class:center,middle
+# Lunch
+
+---
+
+class:center,middle
+# Welcome Back!
+
+---
+
+class:center,middle
+# Visualizing Data
+
+---
+
+# Why do we visualize data?
+--
+
+[![img-center-65](images/vision_zero.png)](http://blog.civicdashboards.com/2014/01/vision-zero-visualizing-traffic-related-fatalities/)
+
+http://blog.civicdashboards.com/2014/01/vision-zero-visualizing-traffic-related-fatalities/
+
+---
+
+# Why do we visualize data?
+
+![img-center-100](images/vision_zero_table.png)
+
+---
+
+# Bar Chart
+![img-center-100](images/311_chart1.png)
+
+---
+
+#"Barless" Bar Chart
+![img-center-100](images/311_chart2.png)
+
+---
+
+# Horizontal Bar Chart
+![img-center-100](images/311_chart3.png)
+
+---
+
+# Ranked Horizontal Bar Chart
+![img-center-100](images/311_chart4.png)
+
+---
+
+# Grouped Bar Chart
+![img-center-100](images/311_chart5.png)
+
+---
+
+# Grouped Bar Chart
+![img-center-100](images/311_chart6.png)
+
+---
+
+# Precognitive Processing
+![img-center-100](images/chart7.png)
+
+---
+
+# Stacked Bar Chart
+![img-center-100](images/311_chart7.png)
+
+---
+
+# 100% Stacked Bar Chart
+![img-center-100](images/311_chart7a.png)
+
+---
+
+# Stacked Bar Chart
++ Which of these do you like better?
+
+
+![img-left-50](images/311_chart7.png)
+![img-right-50](images/311_chart7a.png)
+--
+
+##### &nbsp;
++ Why?
+
+---
+
+# Line Chart
+![img-center-100](images/311_chart8.png)
+
+---
+
+# Why use a line chart?
+![img-center-100](images/311_chart8a.png)
+
+---
+
+# Line Chart with Categorical Data
+![img-center-100](images/311_chart9.png)
+
+---
+
+# Multi-Line Chart
+![img-center-100](images/311_chart10.png)
+
+---
+
+# Multi-Line Chart
+![img-center-100](images/311_chart11.png)
+
+---
+
+exclude: true
+# Small Multiples
+![img-center-50](images/sm.png)
+
+---
+
+exclude: true
+class:middle
+![img-center-100](images/chart12a_rev.png)
+
+Source: Enrico Bertini, NYU Tandon School of Engineering
+
+---
+exclude: true
+# Banking to 45 degrees
+![img-center-100](images/chart12b_rev.png)
+
+Source: Cleveland, William S., McGill Marylyn E., and McGill Robert. ["The Shape Parameter of a Two-Variable Graph."](http://www.jstor.org/stable/2288843) Journal of the American Statistical Association 83.402 (1988): 289-300.
+---
+
+# Pie Charts
+![img-center-75](images/311_chart13.png)
+
+---
+
+# Pie Charts
+![img-center-85](images/chart15.png)
+
+--
+
+![img-center-75](images/chart16.png)
+"Piecharts". Licensed under [CC BY 1.0](https://creativecommons.org/licenses/by/1.0/legalcode) via [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Piecharts.svg#/media/File:Piecharts.svg)
+
+---
+
+# Pie Charts
+![img-center-90](images/chart14.png)
+"Badpie" by Gilgongo - Own work. Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/us/legalcode) via [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Badpie.png#/media/File:Badpie.png)
+
+
+---
+
+# Pie Charts
+![img-center-medium](images/chart17.png)
+Source: http://simplystatistics.org/2012/11/26/the-statisticians-at-fox-news-use-classic-and-novel-graphical-techniques-to-lead-with-data/ 
+
+For Analysis: http://peltiertech.com/use-bar-charts-not-pies/
+
+---
+
+# Donut Chart
+![img-center-70](images/311_chart18.png)
+
+---
+exclude:true 
+# For more on Pie Charts
+1. Spence, I. (2005). [No Humble Pie: The Origins and Usage of a Statistical Chart](http://www.psych.utoronto.ca/users/spence/Spence%202005.pdf). *Journal of Educational and Behavioral Statistics*, 30(4), 353–368.
+2. Heer, J. and Bostock, M. (2010). [Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design](http://hci.stanford.edu/publications/2010/crowd-perception/heer-chi2010.pdf). *CHI 2010*, April 10–15, 2010, Atlanta, Georgia, USA.
+
+---
+exclude:true
+# Channels and Marks
+![img-center-90](images/chart18.png)
+<br>
+From Tamara Munzner, [Visualization Analysis and Design](http://www.cs.ubc.ca/~tmm/vadbook/)
+
+---
+
+# Key Takeaways
+--
+
++ Think about your audience
+--
+
++ Reduce the amount of effort it takes to understand your visualization
+--
+
++ Select colors with high contrast
+--
+
++ There are always ways of improving
+
+---
+
+class:center,middle
+# How do you learn to create good visualizations?
+# &nbsp;
+
+---
+
+class:center,middle
+# How do you learn to create good visualizations?
+# ...Make a lot of bad visualizations 
+
+---
+
+class: middle, center
+# 15 Min Break
+
+---
+
+class:center,middle
+# We're Going to Join the Population Data with the 311 Service Requests
+
+---
+
+# VLOOKUP
+--
+
++ Useful for referencing data from another sheet (reference tables)
+--
+
++ Basic Syntax
+```
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+```
+
+--
+
++ Example
+```
+=VLOOKUP(A2,SHEET2$A1:$D500,4,FALSE)
+```
+---
+
+# Adding the VLOOKUP
++ We need to lookup the population based on the Community Board and Borough
+
+```
+=VLOOKUP(A5,'[NYC_Population_1970-2010_formatted.xlsx]A'!$A$2:$G$60,7,FALSE)
+```
+
+--
+
++ Use the value in cell A5
+--
+
++ Go to Workbook `NYC_Population_1970-2010_formatted.xlsx`, Sheet `A`
+--
+
++ Match the value from cell A5 in Column A, Rows 2 - 60
+--
+
++ Return the value in column 7 (G)
+--
+
++ Don't do any fuzzy matching (exact match)
+
+---
+
+# Adding the VLOOKUP
+
+![img-center-90](images/vlookup1.png)
+
+---
+
+# Adding the VLOOKUP
+
+![img-center-90](images/vlookup2.png)
+
+---
+
+# Calculating the Complaints per 1000 People
+
+![img-center-90](images/calc_complaints1.png)
+
+---
+
+# Calculating the Complaints per 1000 People
+
+![img-center-90](images/calc_complaints2.png)
+
+---
+
+# Conditional Formatting
+![img-center-65](images/cf1.png)
+
+---
+
+# Conditional Formatting
+![img-center-80](images/cf_311_pop.png)
 
 ---
 
@@ -84,18 +905,47 @@ class: center
 + [Data Sensemaking](http://fellinlovewithdata.com/teaching/developing-a-data-sensemaking-course) by Enrico Bertini
 
 ---
+name:contact
 
-# Contact Information
-## Richard Dunks
-+ Email: richard[at]datapolitan[dot]com
-+ Blog: http://blog.datapolitan.com
-+ Twitter: [@datapolitan](https://twitter.com/datapolitan)
+## .center[Contact Information]
+### Richard Dunks
+<ul>
+    <li style="font-size:35px">
+        Email: richard[at]datapolitan[dot]com
+    </li>
+    <li style="font-size:35px">
+        Website: <a href="http://www.datapolitan.com">http://www.datapolitan.com</a>
+    </li>
+    <li style="font-size:35px">
+        Twitter: <a href="https://twitter.com/datapolitan">@datapolitan</a>
+    </li>
+</ul>
 
-## Julia Marden
-+ Email: julia[at]tinypanther[dot]com
-+ Website: http://tinypanther.com
-+ Twitter: [@juliaem](https://twitter.com/juliaem)
+<!-- ### Julia Marden
+<ul>
+    <li style="font-size:35px">
+        Email: julia[at]tinypanther[dot]com
+    </li>
+    <li style="font-size:35px">
+        Website: <a href="http://tinypanther.com">http://tinypanther.com</a>
+    </li>
+    <li style="font-size:35px">
+        Twitter: <a href="https://twitter.com/juliaem">@juliaem</a>
+    </li>
+</ul> -->
 
+### Elizabeth DiLuzio
+<ul>
+    <li style="font-size:35px">
+        Email: Elizabeth[at]evaluationandlearningconsulting[dot]com
+    </li>
+    <li style="font-size:35px">
+        Website: <a href="http://www.evaluationandlearningconsulting.com">http://www.evaluationandlearningconsulting.com</a>
+    </li>
+    <li style="font-size:35px">
+        Twitter: <a href="https://twitter.com/lizdiluzio">@lizdiluzio</a>
+    </li>
+</ul>
 ---
 
 class:center, middle
