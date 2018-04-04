@@ -976,6 +976,122 @@ class:center,middle
 ```
 ---
 
+# Preparing the Data
+--
+
++ We need a lookup value (key) that matches between sheets
+--
+
++ The Community Districts are in the format `## BOROUGH`
+--
+
++ We can use a formula to create this in our population sheet
+
+---
+
+# CONCATENATE Function
+--
+
++ Useful for combining text fields
+--
+
++ Basic Syntax
+
+```
+=CONCATENATE(text1, [text2], ...)
+```
+--
+
++ Example
+![img-center-70](images/concat1.png)
+
+
+---
+
+# CONCATENATE Function
++ Useful for combining text fields
++ Basic Syntax
+
+```
+=CONCATENATE(text1, [text2], ...)
+```
+
++ Example (with space between names)
+![img-center-70](images/concat2_box.png)
+
+
+---
+
+# Preparing the Population Data
+![img-center-100](images/concat3.png)
+
++ Note the space before the borough name
+
+
+---
+
+# Preparing the Population Data
+![img-center-100](images/concat4.png)
+
++ Copy and paste the formula down
+
+---
+
+# Preparing the Population Data
+![img-center-100](images/concat5.png)
+
++ Notice the leading zero for Community Districts 10 - 12
+---
+
+# Preparing the Population Data
++ The simple method is to delete the `"0"` from the formula
+
+![img-center-100](images/concat6.png)
+
+---
+
+class:center,middle
+# What if we didn't want to manually edit the formula?
+
+---
+
+# Nested Functions
+![img-center-100](images/concat_form.png)
+
++ What are we telling Excel to do?
+
+---
+
+# Nested Functions
+![img-center-100](images/concat_form0.png)
+
+--
+
+1. Test the value in Cell A3 to see if it's less than 10
+---
+
+# Nested Functions
+![img-center-100](images/concat_form1.png)
+
+1. Test the value in Cell A3 to see if it's less than 10
+2. `IF` it's less than 10, add a 0, otherwise, add an empty string (`""`)
+
+---
+
+# Nested Functions
+![img-center-100](images/concat_form2.png)
+
+1. Test the value in Cell A3 to see if it's less than 10
+2. `IF` it's less than 10, add a 0, otherwise, add an empty string (`""`)
+3. `CONCATENATE` the value above with the contents of Cell A3 and `" BRONX"`
+
+---
+
+# Now One Formula Rules Them All
+![img-center-100](images/concat_form_nested.gif)
+
+---
+
 # Adding the VLOOKUP
 + We need to lookup the population based on the Community Board and Borough
 
