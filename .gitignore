@@ -2,3 +2,5 @@
 *.sublime*
 */_rejects/*
 ~*.xlsx
+*.pptx
+*.mov
