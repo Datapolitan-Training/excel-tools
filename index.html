@@ -1092,19 +1092,43 @@ class:center,middle
 
 ---
 
+# Preparing the 311 Data
+--
+
++ Aggregate the number of noise-related complaints by Community District
+--
+
++ HINT: Use a PivotTable
+--
+
+
+![img-center-70](images/cd_pt.png)
+---
+
+# Preparing the 311 Data
++ Add a column labeled `CD Population`
+
+![img-center-90](images/cd_pop_prep.png)
+--
+
++ This is where we're going to import the population using `VLOOKUP`
+
+---
+
 # Adding the VLOOKUP
-+ We need to lookup the population based on the Community Board and Borough
-
 ```
-=VLOOKUP(A5,'[NYC_Population_1970-2010_formatted.xlsx]A'!$A$2:$G$60,7,FALSE)
+=VLOOKUP(A5,'[NYC_Population_1970-2010.xlsx]A'!$A$2:$G$60,7,FALSE)
 ```
 
 --
 
-+ Use the value in cell A5
++ Use the value in cell A5 (from our PivotTable of complaints by `Community Board`)
 --
 
-+ Go to Workbook `NYC_Population_1970-2010_formatted.xlsx`, Sheet `A`
++ Go to Workbook `NYC_Population_1970-2010.xlsx`
+--
+
++ Find Sheet `A`
 --
 
 + Match the value from cell A5 in Column A, Rows 2 - 60
@@ -1118,14 +1142,18 @@ class:center,middle
 ---
 
 # Adding the VLOOKUP
++ Verify the result
 
-![img-center-90](images/vlookup1.png)
+![img-center-100](images/vlookup1.png)
+
+
 
 ---
 
 # Adding the VLOOKUP
 
-![img-center-90](images/vlookup2.png)
++ Copy and paste the formula
+![img-center-90](images/vlookup_copy.gif)
 
 ---
 
@@ -1133,9 +1161,7 @@ class:center,middle
 
 ![img-center-90](images/calc_complaints1.png)
 
----
-
-# Calculating the Complaints per 1000 People
+--
 
 ![img-center-90](images/calc_complaints2.png)
 
