@@ -1154,30 +1154,54 @@ class:center,middle
 ---
 
 # Preparing the Population Data
-![img-center-100](images/concat3.png)
+--
 
++ Insert a column
+--
+
++ Call it `CB_Number`
+--
+
++ Give it the formula:
+
+```
+=CONCATENATE("0",A2," ","B2")
+```
+
+--
 + Note the space before the borough name
 
+![img-center-80](images/concat3_rev.png)
 
 ---
 
 # Preparing the Population Data
-![img-center-100](images/concat4.png)
-
 + Copy and paste the formula down
 
+![img-center-80](images/concat3b.png)
+--
+
+&nbsp;
+![img-center-80](images/concat4_rev.png)
+
 ---
 
 # Preparing the Population Data
-![img-center-100](images/concat5.png)
-
 + Notice the leading zero for Community Districts 10 - 12
+
+![img-center-100](images/concat4_rev_box.png)
+
+--
+
++ What can we do about this?
+
 ---
 
 # Preparing the Population Data
 + The simple method is to delete the `"0"` from the formula
 
-![img-center-100](images/concat6.png)
+![img-center-100](images/concat6_rev.png)
+
 
 ---
 
@@ -1187,37 +1211,38 @@ class:center,middle
 ---
 
 # Nested Functions
-![img-center-100](images/concat_form.png)
+![img-center-100](images/concat_form_rev.png)
 
 + What are we telling Excel to do?
 
 ---
 
 # Nested Functions
-![img-center-100](images/concat_form0.png)
+![img-center-100](images/concat_form0_rev.png)
 
 --
 
-1. Test the value in Cell A3 to see if it's less than 10
+1. Test the value in Cell A11 to see if it's less than 10
 ---
 
 # Nested Functions
-![img-center-100](images/concat_form1.png)
+![img-center-100](images/concat_form0_rev.png)
 
-1. Test the value in Cell A3 to see if it's less than 10
+1. Test the value in Cell A11 to see if it's less than 10
 2. `IF` it's less than 10, add a 0, otherwise, add an empty string (`""`)
 
 ---
 
 # Nested Functions
-![img-center-100](images/concat_form2.png)
+![img-center-100](images/concat_form2_rev.png)
 
-1. Test the value in Cell A3 to see if it's less than 10
+1. Test the value in Cell A11 to see if it's less than 10
 2. `IF` it's less than 10, add a 0, otherwise, add an empty string (`""`)
 3. `CONCATENATE` the value above with the contents of Cell A3 and `" BRONX"`
 
 ---
 
+exclude:true
 # Now One Formula Rules Them All
 ![img-center-100](images/concat_form_nested.gif)
 
@@ -1248,7 +1273,7 @@ class:center,middle
 
 # Adding the VLOOKUP
 ```
-=VLOOKUP(A5,'[NYC_Population_1970-2010.xlsx]A'!$A$2:$G$60,7,FALSE)
+=VLOOKUP(A5,'[NYC_Population_1970-2010_flat.xlsx]A'!$C$1:$I$60,7,FALSE)
 ```
 
 --
@@ -1256,13 +1281,13 @@ class:center,middle
 + Use the value in cell A5 (from our PivotTable of complaints by `Community Board`)
 --
 
-+ Go to Workbook `NYC_Population_1970-2010.xlsx`
++ Go to Workbook `NYC_Population_1970-2010_flat.xlsx`
 --
 
 + Find Sheet `A`
 --
 
-+ Match the value from cell A5 in Column A, Rows 2 - 60
++ Match the value from cell A5 in Column C, Rows 1 - 60
 --
 
 + Return the value in column 7 (G)
